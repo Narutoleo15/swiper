@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slider</title>
+    <title>Media Swiper</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./package/swiper.min.css">
@@ -14,28 +14,30 @@
 </head>
 
 <body>
-    <section>
+    <div id="container">
+        <section class="netfix-slider">
 
-        <!-- Swiper -->
-        <div #swiperRef="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
+            <!-- Swiper -->
+            <div #swiperRef="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
 
-        <p class="append-buttons">
-            <button class="prepend-2-slides">Prepend 2 Slides</button>
-            <button class="prepend-slide">Prepend Slide</button>
-            <button class="append-slide">Append Slide</button>
-            <button class="append-2-slides">Append 2 Slides</button>
-        </p>
-    </section>
+            <p class="append-buttons">
+                <button class="prepend-2-slides">Prepend 2 Slides</button>
+                <button class="prepend-slide">Prepend Slide</button>
+                <button class="append-slide">Append Slide</button>
+                <button class="append-2-slides">Append 2 Slides</button>
+            </p>
+        </section>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
