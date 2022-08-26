@@ -2,9 +2,5 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
-  -webkit-transition-property: opacity, height, -webkit-transform;
-  transition-property: opacity, height, -webkit-transform;
   transition-property: transform, opacity, height;
-  transition-property: transform, opacity, height, -webkit-transform;
-}
-/*# sourceMappingURL=effect-creative.css.map */
+}/*# sourceMappingURL=effect-creative.css.map */

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "mousewheel.scss"
-    ],
-    "names": [],
-    "file": "mousewheel.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"mousewheel.css"}

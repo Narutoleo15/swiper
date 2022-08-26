@@ -14,29 +14,45 @@
 </head>
 
 <body>
-    <div id="container">
-        <section class="netfix-slider">
-
-            <!-- Swiper -->
-            <div #swiperRef="" class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+    <!-- Swiper -->
+    <div class="netfix-slider">
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/3"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/4"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/5"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/9"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/2"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/2"
+                        alt="the doctor"></img></div>
+                <div class="swiper-slide"><img class="img" src="https://source.unsplash.com/random/{randomImage}"
+                        alt="the doctor"></img></div>
             </div>
 
-            <p class="append-buttons">
-                <button class="prepend-2-slides">Prepend 2 Slides</button>
-                <button class="prepend-slide">Prepend Slide</button>
-                <button class="append-slide">Append Slide</button>
-                <button class="append-2-slides">Append 2 Slides</button>
-            </p>
-        </section>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <p class="append-buttons">
+            <button class="prepend-2-slides">Prepend 2 Slides</button>
+            <button class="prepend-slide">Prepend Slide</button>
+            <button class="append-slide">Append Slide</button>
+            <button class="append-2-slides">Append 2 Slides</button>
+        </p>
     </div>
 
     <!-- Swiper JS -->
@@ -46,8 +62,9 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
+            slidesPerGroup: 2,
             centeredSlides: true,
-            spaceBetween: 30,
+            spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -58,6 +75,7 @@
             },
         });
 
+        let randomImage = Math.random(Math.ceil)
         var appendNumber = 4;
         var prependNumber = 1;
         document
